@@ -1,4 +1,4 @@
-# Pink books
+# Pink book
 
 ## Project setup
 ```
