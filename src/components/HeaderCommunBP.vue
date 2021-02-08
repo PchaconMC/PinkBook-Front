@@ -14,7 +14,7 @@
             <b-dropdown-item href="#/create-book">Recomienda un libro</b-dropdown-item>
             <b-dropdown-item href="#/admin-category" v-if="getAccessToken && getDataUser.role == 'ADMIN'">Admin Categorías</b-dropdown-item>
           </b-dropdown>
-          <img src="../assets/img/logo.png" alt="logo pink book" class="logo" />
+          <img src="../assets/img/logo.png" alt="logo pink book" class="logo" height="50" />
         </div>
         <div class="containerBotons">
           <ul>
@@ -190,9 +190,7 @@ export default {
   width: 20%;
 }
 
-.logo {
-  height: 100%;
-}
+
 .headerTitulo {
   display: flex;
   flex-wrap: wrap;

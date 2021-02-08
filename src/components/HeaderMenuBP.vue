@@ -16,7 +16,7 @@
             <b-dropdown-item href="#/create-book" v-if="getAccessToken">Recomienda un libro</b-dropdown-item>
             <b-dropdown-item href="#/admin-category" v-if="getAccessToken && getDataUser.role == 'ADMIN'">Admin Categorías</b-dropdown-item>
           </b-dropdown>
-          <img src="../assets/img/logo.png" alt="logo pink book" class="logo" />
+          <img src="../assets/img/logo.png" alt="logo pink book" class="logo" height="50" />
         </div>
         <div class="containerBotons">
           <ul>
@@ -155,8 +155,23 @@ export default {
         .catch((err) => {
           console.log(err);
         });
+        this.resetState();
     },
     crearUsuario() {
+      const validacion=this.validarCampos()
+      if(validacion.invalido){
+        this.$bvToast.toast(
+            validacion.mensaje,
+            {
+              title: "Registro de usuarios",
+              autoHideDelay: 5000,
+              appendToast: false,
+              variant: "warning",
+              solid: true,
+            }
+          );
+          return false
+      }
       const data = {
         role: "READER",
         name: this.name.toLowerCase(),
@@ -176,11 +191,52 @@ export default {
               solid: true,
             }
           );
+          this.name=null
+          this.email=null
+          this.password=null
+          this.rePassword=null
         })
         .catch((err) => {
           console.log(err);
         });
     },
+    validarCampos(){
+      let validacion={
+        invalido:false,
+        mensaje:""
+      }
+
+      let emailRegex =/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i; //eslint-disable-line
+     
+      if(this.name=="" || this.name==null){
+        validacion.invalido=true
+        validacion.mensaje="Debe completar el nombre"
+        return validacion
+      }
+      if(this.email=="" || this.email==null){
+        validacion.invalido=true
+        validacion.mensaje="Debe completar el email"
+        return validacion
+      }
+      
+      if(!emailRegex.test(this.email)){
+        validacion.invalido=true
+        validacion.mensaje="El emil no es valido"
+        return validacion
+      }
+      if(this.password=="" || this.password==null || this.password.length<6){
+        validacion.invalido=true
+        validacion.mensaje="Debe completar el password mayor de 6 caracteres"
+        return validacion
+      }
+      if(this.password!=this.rePassword){
+        validacion.invalido=true
+        validacion.mensaje="Los passwords deben ser identicos"
+        return validacion
+      }
+
+      return validacion
+    }
   },
   computed: {
     ...mapGetters(["getAccessToken", "getDataUser"]),
