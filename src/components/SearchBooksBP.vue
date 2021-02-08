@@ -3,7 +3,7 @@
     <div class="containerSearcher">
       <p class="titulo">Busca un libro</p>
       <div class="containerFormSearcher">
-        <input type="text" name="" id="inputText" v-model.trim="textSearch" />
+        <input type="text" name="" id="inputText" v-model.trim="textSearch" placeholder="Busqueda por: Título | Autor | ISBN"/>
         <div class="boton" @click="searchBooks()">
           Buscar
         </div>

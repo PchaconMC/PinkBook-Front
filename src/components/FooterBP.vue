@@ -6,47 +6,32 @@
           <div class="widget-item">
             <h4 class="tituloFooter">Contact Info</h4>
             <ul class="contact-list">
-              <li>1481 Creekside Lane <br />Avila Beach, CA 931</li>
-              <li>+53 345 7953 32453</li>
-              <li>yourmail@gmail.com</li>
+              <li>Nueva Andalucia, Marbella <br />+34 610661880 <br />pedro.chacon29@hotmail.com</li>
             </ul>
           </div>
           <div class="widget-item">
             <h4 class="tituloFooter">Engeneering</h4>
             <ul style="text-align:left">
-              <li><a href="">Applied Studies</a></li>
-              <li><a href="">Computer Engeneering</a></li>
-              <li><a href="">Software Engeneering</a></li>
-              <li><a href="">Informational Engeneering</a></li>
-              <li><a href="">System Engeneering</a></li>
+              <li><a href="">Pedro Antonio Chacón Garnica</a></li>
             </ul>
           </div>
           <div class="widget-item">
             <h4 class="tituloFooter">Graphic Design</h4>
             <ul style="text-align:left">
-              <li><a href="">Applied Studies</a></li>
-              <li><a href="">Computer Engeneering</a></li>
-              <li><a href="">Software Engeneering</a></li>
-              <li><a href="">Informational Engeneering</a></li>
-              <li><a href="">System Engeneering</a></li>
+              <li><a href="">Pedro Antonio Chacón Garnica</a></li>
             </ul>
           </div>
           <div class="widget-item">
             <h4 class="tituloFooter">Development</h4>
             <ul style="text-align:left">
-              <li><a href="">Applied Studies</a></li>
-              <li><a href="">Computer Engeneering</a></li>
-              <li><a href="">Software Engeneering</a></li>
-              <li><a href="">Informational Engeneering</a></li>
-              <li><a href="">System Engeneering</a></li>
+              <li><a href="">Pedro Antonio Chacón Garnica</a></li>
             </ul>
           </div>
           <div class="widget-item">
-            <h4 class="tituloFooter">Newsletter</h4>
+            <h4 class="tituloFooter">Boletín informativo</h4>
             <form class="footer-newslatter" >
               <input type="email" placeholder="E-mail" id="inputText"/>
-              <button class="site-btn boton">Subscribe</button>
-              <p>*We don’t spam</p>
+              <button class="site-btn boton">Suscribete</button>
             </form>
           </div>
         </div>
@@ -55,15 +40,15 @@
     <div class="footer-bottom">
       <div class="footer-warp">
         <ul class="footer-menu">
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">Register</a></li>
-          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terminos y Condiciones</a></li>
+          <li><a href="#">Registro</a></li>
+          <li><a href="#">Privacidad</a></li>
         </ul>
         <div class="copyright">          
           Copyright &copy;          
-          All rights reserved | This template is made with
-          <i class="fa fa-heart-o" aria-hidden="true"></i> by
-          <a href="https://colorlib.com" target="_blank">Pink Book</a>          
+          Todos los derechas reservados | 
+          <i class="fa fa-heart-o" aria-hidden="true"></i> por
+          <a href="#" target="_blank">Pink Book</a>          
         </div>
       </div>
     </div>

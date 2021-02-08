@@ -2,9 +2,7 @@
   <div class="containerJoin">
     <p class="tituloJoin">Unete a nuestra comunidad!</p>
     <p class="subTituloJoin">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada
-      lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula
-      sapien. Suspendisse cursus faucibus finibus.
+      Registrate en nuestra comunidad Pink Book, donde podras subir libros a nuestra biblioteca y valorar los libros ya cargados. Animate !!, te esperamos.
     </p>
     <div class="containerBotonJoin">
       <a href="#"><div class="boton" href="#up">

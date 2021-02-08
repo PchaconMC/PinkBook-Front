@@ -2,8 +2,10 @@
   <div class="containerLibros">
     <p class="tituloLibros">Libros en existencia</p>
     <p class="subTituloLibros">
+    </p>
+    <p>
       Elige una de nuestras categorias y disfruta de los mejores libros
-      recomendados por los demas lectores, suscribete y recomienda libro tu
+      recomendados por los demas lectores, suscribete y recomienda un libro tu
       tambien
     </p>
     <div class="course-warp">

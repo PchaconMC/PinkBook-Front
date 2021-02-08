@@ -2,9 +2,6 @@
   <div class="containerCategories">
     <p class="tituloCategorias">Categorias de Libros</p>
     <p class="subTituloCategorias">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada
-      lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula
-      sapien. Suspendisse cursus faucibus finibus.
     </p>
     <div class="containerCardsCategorias">
       <div
